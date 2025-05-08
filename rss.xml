@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <item>
+      <title>Nuestra web</title>
+      <link>http://127.0.0.1/WEB_Marcos_Bonilla/index.html</link>
+      <description>Para conocernos a fondo.</description>
+    </item>
+    <item>
+      <title>Shows de Redbull</title>
+      <link>https://www.redbull.com/es-es/collections/shows</link>
+      <description>Los grandes espectaculos.</description>
+    </item>
+
+    <item>
+      <title>Clips de Redbull</title>
+      <link>https://www.redbull.com/es-es/collections/clips</link>
+      <description>Clips famosos de los eventos de Redbull.</description>
+    </item>
+
+    
+
+      </channel>
+</rss>

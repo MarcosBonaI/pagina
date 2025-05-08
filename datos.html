@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>WEB ALUMNO VIRTUAL</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        
+        <link href="estilo.css"  rel="stylesheet" type="text/css">
+
+<script>
+
+ function validar()
+	{
+	 if (formulario.favorito.value=="")
+	 {alert("Dime cual es tu movimiento favorito");}
+	  else if (formulario.dificil.value=="")
+	  {alert("Dime cual crees que es el movimiento más dificil");}
+	   else if (formulario.r.value=="")
+	   {alert("Dime si alguna vez te has lesionado");}
+		else
+		{formulario.submit();}
+}
+function abrir(){
+	alert("Has abandonado el cuadro de texto");
+}
+
+</script>
+
+</head>
+<body>
+	         <div class="cabecera">
+                 <a class="boton" href="index.html">Men&uacute</a>
+		 <a class="boton" href="personal.html">Personal</a>
+		 <a class="boton" href="datos.html">Datos</a>
+		 <a class="boton" href="popup.html">Pop-up</a>
+		 <a class="boton" href="tiempo.xml">Tiempo</a>
+                </div>
+
+
+		
+         
+                <div id="contenedor"> 
+                <form name="formulario" action="datos.php" method="get"> 
+		 <p>Movimiento favorito: <input name="favorito" type="text" name="op1"/></p>
+		 <p>Movimiento mas complejo: <input name="dificil" type="text" name="op2"/></p>
+
+	<p>¿Alguna vez te has lesionado?</p>
+		 <p><input name="r" type="radio" name="opcion" value="si"/>Si</p>
+		 <p><input name="r" type="radio" name="opcion" value="no"/>No</p>
+	<p>¿Como fue?<br/><input type="text" name="como" size="100px" onBlur="abrir()"/></p>
+	<p>¿Hace cuantos años empezaste?</p>
+		 <p><input type="checkbox" name="poco" value="si"  checked="checked"/>Menos de 5</p>
+		 <p><input type="checkbox" name="medio" value="si"/>5</p>
+		 <p><input type="checkbox" name="mucho" value="si"/>Mas de 5</p>
+
+		 <input type="button" value="Enviar" onClick="validar()"/>
+		 <input type="reset" value="Borrar"/>
+                </div>
+
+
+                <div id="pie">
+		 <p><center><b>IES Leonardo da vinci</b></center></p>
+                    
+                </div>
+		
+	
+</body>
+</html>
